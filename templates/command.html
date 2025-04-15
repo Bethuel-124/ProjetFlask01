@@ -1,0 +1,51 @@
+{%extends 'base.html'%}
+{%block content%}
+<section class="cmd_content">
+    <h2>Command whatever you want</h2>
+    <form action="{{url_for('command')}}" method="POST">
+        <div class = "name1">
+            <label for="name">Enter your name:</label>
+            <input type="text" name = "name" class  = "name2" required>
+        </div>
+        <div class = "email1">
+            <label for="email">Enter your E-mail:</label>
+            <input type="email" name = "email" class = "email2" required>
+        </div>
+        <div class="choose">
+            <label for="dishe">Choose your dishe:</label>
+            <select name="dishe" id="dishe">
+                <option value="Chawarma">Chawarma</option>
+                <option value="Pizza">Pizza</option>
+                <option value="Burger">Burger</option>
+                <option value="Salade">Salade</option>
+                <option value="Desserts">Desserts</option>
+                <option value="Spagetti">Spagetti</option>
+                <option value="Riz">Riz</option>
+                <option value="Poulet braisé">Poulet braisé</option>
+                <option value="Frits au poulet">Frits au poulet</option>
+                <option value="Pâte de maïs">Pâte de maïs</option>
+                <option value="Come">"Come"</option>
+                <option value="Cassoulet">Cassoulet</option>
+                <option value="Voandzou">Voandzou</option>
+                <option value="Dambou">"Dambou"</option>
+                <option value="Waké">"Waké"</option>
+                <option value="Akassa">Akassa</option>
+                <option value="Wassawassa">"Wassawassa"</option>
+                <option value="Atchiéké">"Atchiéké"</option>
+            </select>
+        </div>
+        <div class="transport">
+            <h4>Transport mode</h4>
+            <label for="trans">
+                <input type="checkbox" name="trans" value="GoZem">GoZem
+                <input type="checkbox" name="trans" value="Passer">Pass
+            </label>
+        </div>
+
+        <button class = "submit" type="submit">Command</button>
+
+    
+    </form>
+</section>
+
+{%endblock%}

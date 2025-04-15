@@ -1,0 +1,58 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pk_dishes</title>
+        <link rel="stylesheet" href="{{url_for('static', filename = 'style.css')}}">
+    </head>
+    <body>
+        <!--En-tete-->
+        <header class = "header01">
+            <section class = "header02">
+
+                <div class = "logo">
+                    <img src="{{url_for('static', filename = 'img/logo.png')}}" alt="logo">
+
+                    <p class = "name">Pk_dishes</p>
+
+                    <img src="{{url_for( 'static', filename = 'img/cook01.jpg')}}" alt=""  class = "img01">
+                </div>
+                
+
+                <nav class = "nav2">
+                    <p><a href = "{{url_for('index')}}"">Home</a></p>
+                    <p><a href = "{{url_for('dishes')}}">Our dishes</a></p>
+                    <p><a href = "{{url_for('command')}}">Command</a></p>
+                    <p><a href = "{{url_for('contact')}}">Contact</a></p>
+                </nav>
+               
+            </section>
+        </header>
+
+        <div class = "container">
+            {% block content %}{%endblock%}
+        </div>
+        <p><a href="{{url_for('essai')}}">Essai</a></p>
+        
+        <!--Footer-->
+        <footer class = "footer"> 
+            <div class="about">
+                <h3>About us</h3>
+                <p>Where every meal is an experience</p>
+            </div>
+            <div class="contact">
+                <h3>Contact</h3>
+                <p>Email: bethuelakouta@gmail.com</p>
+                <p>Phone: 0157987405 <br>0143354474 <br>0195151064</p>
+            </div>
+            <div class="bot">
+                <p>&copy; 2025 Pk_dishes. All rights reserved</p>
+            </div>
+            <p><a href="{{url_for('essai')}}">Essai</a></p>
+
+        </footer>
+
+    </body>
+    </html>

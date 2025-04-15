@@ -1,0 +1,147 @@
+/* *{
+    margin: 0;
+    overflow: hidden;
+}
+
+header{
+    background-color: rgb(102, 123, 143);
+    height: 500px;
+    width:100%;
+}
+
+.nav01{
+    height: 50px;
+    background-color: rgb(47, 53, 58);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    font-weight: bold;
+    color: rgb(221, 226, 230);
+
+}
+
+.nav01 p b{
+    color: rgb(219, 230, 239);
+}
+.nav02{
+    position: relative;
+    ul{list-style: none;
+        display: flex;
+        align-items: center; };
+ 
+
+    ul li a{text-decoration: none;
+    color: rgb(223, 231, 239);
+    display: flex;
+    position: relative;
+    margin-right: 10px;}
+ 
+}
+
+.nav02 ul li a:after{
+    content: " ";
+    position: absolute;
+    top: 17px;
+    background-color: rgb(188, 100, 36);
+    width: 0;
+    height: 8px;
+}
+
+.nav02 ul li a:hover::after{
+    width:100%;
+    transition: .5s;
+}
+.cache{
+    display: none;
+}*/
+
+
+/*Essai02*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 500px;
+    background-color: rgb(124, 130, 136);
+}
+
+.head{
+    background-color: rgb(141, 185, 224);
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    height: 40px;
+    width: 40px;
+    margin-left: 40px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    
+}
+
+.bar{
+    display: none;
+}
+.cache{
+    display: none;
+}
+
+.title{
+    position: absolute;
+    left: 20px;
+    top: 45px;
+    transform: scale(1.5);
+    font-weight: bold;
+}
+
+.nav ul {
+    display: flex;
+    li{
+        list-style: none;
+        margin-right: 10px;
+    }
+    li a{
+        text-decoration: none;
+    }
+}
+
+.connect{
+    cursor: pointer;
+}
+
+/*----------CONTAINER----------*/
+
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 7rem;
+    background-color: var(--a blue) var(--b white);
+}
+
+/*@media (max-width: 990px) {
+    
+}*/
+
+.btn{
+    padding: 5px 7px;
+    cursor: pointer;
+    transform: scale(1.2);
+    margin-right: 20px;
+}
+
+.btn:hover{
+    background-color: rgb(27, 31, 34);
+    color: #fff;
+}

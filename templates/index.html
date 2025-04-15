@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!--Content-->
+<section class = "content">
+    <h1>Welcome To Parakou's kitchen</h1>
+    <span class = "left"><img src="{{url_for( 'static', filename = 'img/left.jpg')}}" alt="" ></span>
+    <div class = "imgplus">       
+        <!--<div class="b">
+            <p class="y">Cool</p>
+            <p class = "client"></p>
+        </div>-->
+        <div class = "a">
+            <img src="{{url_for( 'static', filename = 'img/cook02.jpg')}}" alt="" class = "img02">
+            <p class="x">Hello and welcome to our sit, dedicated to the culinary wonders of PARAKOU! <br> I am delighted to welcome you to our world where gastronomy blends with tradition. Each dish we offer is an ode to our local produce, and i am eager to share this passion with you.</p>
+        </div>          
+        <div class="b">
+            <p class="y">Thank you very much! <br>I've heard about the richness of flavors here. What makes your dishes so unique? </p>
+            <p class = "client"><img src="{{url_for( 'static', filename = 'img/customer01.jpg')}}" alt="" ></p>
+        </div>
+        <div class="a">
+            <img src="{{url_for( 'static', filename = 'img/cook02.jpg')}}" alt="" class = "img02">
+            <p class="x">Ah, excellent question! Each recipe is the result of a rich and diverse culinary heritage. We use only local ingredients, often organic, which we source directly from producers in the region. <br> This not only garantees the freshness of our products but also supports the local economy. <br>By savoring our dishes, you participate in a culinary adventure that respects both the environement and the craftsmanship of our artisans.</p>
+        </div>
+        <div class ="b">
+            <p class="y">That sound very enticing§<br>Can you tell me motre about the types of dishes you offer?</p>
+            <p class = "client"><img src="{{url_for( 'static', filename = 'img/customer01.jpg')}}" alt=""></p>
+
+        </div>
+        <div class = "a">
+            <img src="{{url_for( 'static', filename = 'img/cook02.jpg')}}" alt="" class = "img02">
+            <p class="x">With pleasure§ <br> Our menu changes with the seasons to always bring you the best of what our land has to offer. that being said, you will find classics that have made our region famous. <br>For example, our starters include ironic dishes like warm goat cheese toast with Herbes de Provences and homemade paté rn croute, which are often favorite among our clients. We have a coq au vin that slowly simmers, revealing deep flavers, as well as seasonal vegetable risotto, perfect for lovers of plant-based cuisine.</p>
+        </div>
+        <div class = "b">
+            <p class="y">That sounds incredible! <br>I'm also a fan of sweets. What desserts do you offer?</p>
+            <p class = "client"><img src="{{url_for( 'static', filename = 'img/customer01.jpg')}}" alt=""></p>
+
+        </div>
+        <div class = "a">
+            <img src="{{url_for( 'static', filename = 'img/cook02.jpg')}}" alt="" class = "img02">
+            <p class="x">Ah, desserts! <br>this is often the favorite part of our clients. I recommand trying our apple and pear tart, made with fruits harvested from our community, or ......</p>
+        </div>
+        <div class = "b">
+            <p class="y">Everything sounds so delicious! I've also heard that you organize events or cooking workshops?</p>
+            <p class = "client"><img src="{{url_for( 'static', filename = 'img/customer01.jpg')}}" alt=""></p>
+
+        </div>
+        <div class = "a">
+            <img src="{{url_for( 'static', filename = 'img/cook02.jpg')}}" alt="" class = "img02">
+            <p class="x">Absolutely! <br> We firmly believethat cooking is a great way to bring people together. That's why we offer cooking workshops where everyone can come learn how to prepare typical dishes from our region. This allows for the sharing of anecdotes, techniques, and above all, creating bonds around a common passion. Additionally, we regularly host tasting evenings where we showcase our specialities paired with carefully selected local wines. It's a unique experience that delights our clients.</p>
+        </div>
+        <div class ="b">
+            <p class="y">That must really be a wonderful experience. How can I stay informed about your events?</p>
+            <p class = "client"><img src="{{url_for( 'static', filename = 'img/customer01.jpg')}}" alt="" ></p>
+
+        </div>
+        <div class = "a">
+            <img src="{{url_for( 'static', filename = 'img/cook02.jpg')}}" alt="" class = "img02">
+            <p class="x">The best way is to sign up for our newsletter! This way, you'll recieve all our updates, special offers, and even a few secret recipes that we'll share from time to time.And don't forget to follow us on social media to stay connected and discover our daily life in the kitchen!</p>
+        </div>
+        
+    </div>
+    <div class = "dishes">
+        <p class="p1"><img src="{{url_for( 'static', filename = 'img/customer03.jpg')}}" alt=""></p>
+        <p class="p2"><img src="{{url_for( 'static', filename = 'img/customer04.jpg')}}" alt=""></p>
+        <p class="p3"><img src="{{url_for( 'static', filename = 'img/customer05.jpg')}}" alt=""></p>
+        <p class="p4"><img src="{{url_for( 'static', filename = 'img/customer06.jpg')}}" alt=""></p>
+        <p class="p5"><img src="{{url_for( 'static', filename = 'img/customer07.jpg')}}" alt=""></p>
+        <span><a href="{{url_for('dishes')}}">Our dishes &raquo;</a></span>
+    </div>
+</section>
+
+
+{%endblock%}

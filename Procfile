@@ -1,1 +1,1 @@
-web: gunicorn Pk_dishes:app
+web: gunicorn app:app

@@ -1,0 +1,41 @@
+# --- Environnement virtuel Python ---
+ProjF01/
+venv/
+env/
+ENV/
+
+# --- Fichiers de cache Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# --- Configurations de l'éditeur ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# --- Fichiers système ---
+.DS_Store
+Thumbs.db
+
+# --- Dépendances Node (React) ---
+node_modules/
+flask-react01/node_modules/
+
+# --- Build React ---
+flask-react01/build/
+flask-react01/.env
+
+# --- Logs ---
+*.log
+
+# --- Pytest / Coverage ---
+.coverage
+htmlcov/
+.cache/
+
+# --- Config Render (si besoin) ---
+.env
+*.env
